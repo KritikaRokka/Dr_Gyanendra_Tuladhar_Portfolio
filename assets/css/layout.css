@@ -1,0 +1,38 @@
+/* layout.css: containers, spacing and page-level grids. No component styling here. */
+
+.container {
+  width: 100%;
+  max-width: calc(var(--container) + var(--gutter) * 2);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.container--narrow {
+  max-width: calc(1120px + var(--gutter) * 2);
+}
+
+.section {
+  padding-block: var(--s-9);
+  position: relative;
+}
+
+.section--tight {
+  padding-block: var(--s-8);
+}
+
+.section--sand {
+  background: var(--c-cream-2);
+}
+
+/* Footer layout */
+.site-footer__grid {
+  display: grid;
+  gap: var(--s-7);
+}
+
+@media (min-width: 880px) {
+  .site-footer__grid {
+    grid-template-columns: 1.4fr 1fr 1fr;
+    align-items: start;
+  }
+}

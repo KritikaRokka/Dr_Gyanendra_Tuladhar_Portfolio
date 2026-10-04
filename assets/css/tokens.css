@@ -1,0 +1,99 @@
+/* tokens.css: every color, size, space, radius and motion value lives here. */
+
+@font-face {
+  font-family: "Anton";
+  src: url("../fonts/anton-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("../fonts/instrument-sans-var.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Color: white canvas, black ink and a saffron glow, as in the reference */
+  --c-ink: #0d0d0d;
+  --c-ink-soft: #55514b;
+  --c-cream: #fffdf9;
+  --c-cream-2: #fbf3e6;
+  --c-glow-1: #ffeed2;
+  --c-glow-2: #ffd29a;
+  --c-glow-3: #ffb870;
+  --c-butter: #ffc27d;
+  --c-accent: #b34700;
+  --c-line: rgba(13, 13, 13, 0.12);
+  --c-line-strong: rgba(13, 13, 13, 0.22);
+  --c-focus: #0d0d0d;
+  --c-error: #a3170f;
+  --c-success: #1d5c2f;
+
+  /* Glass: opacity is set high enough to keep text at 4.5:1 or better over snow, sky or dark photos */
+  --glass-light: rgba(255, 253, 249, 0.72);
+  --glass-light-solid: #fbf6ec;
+  --glass-dark: rgba(13, 13, 13, 0.74);
+  --glass-dark-solid: #1b1a18;
+  --glass-border-light: rgba(255, 255, 255, 0.75);
+  --glass-border-dark: rgba(255, 255, 255, 0.18);
+  --glass-blur: blur(18px) saturate(1.4);
+  --glass-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset, 0 6px 20px rgba(60, 30, 0, 0.08), 0 20px 48px rgba(60, 30, 0, 0.1);
+
+  /* Type families */
+  --font-display: "Anton", "Impact", "Arial Narrow Bold", sans-serif;
+  --font-accent: var(--font-text);
+  --font-text: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Type scale (fluid) */
+  --fs-caption: 0.875rem;
+  --fs-body: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+  --fs-lead: clamp(1.125rem, 1.04rem + 0.45vw, 1.4rem);
+  --fs-h3: clamp(1.3rem, 1.15rem + 0.8vw, 1.9rem);
+  --fs-h2: clamp(2.5rem, 1.6rem + 3.6vw, 4.75rem);
+  --fs-h1-page: clamp(3.25rem, 1.8rem + 6vw, 7rem);
+  --fs-hello: clamp(2.6rem, 0.5rem + 9.8vw, 10.5rem);
+  --fs-name: clamp(2.9rem, 0.8rem + 8.2vw, 6.75rem);
+  --fs-role: clamp(1.9rem, 1rem + 3.6vw, 3.9rem);
+  --fs-stat: clamp(3.5rem, 2rem + 4.6vw, 6rem);
+  --fs-num: clamp(2.75rem, 2rem + 2.4vw, 4rem);
+
+  --lh-tight: 0.95;
+  --lh-body: 1.6;
+  --measure: 66ch;
+
+  /* Spacing (4px base) */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: clamp(3rem, 2rem + 3vw, 5.5rem);
+  --s-9: clamp(4.5rem, 2.5rem + 7vw, 9rem);
+  --gutter: clamp(1rem, 0.5rem + 2.4vw, 3rem);
+  --container: 1360px;
+
+  /* Radii */
+  --r-sm: 8px;
+  --r-md: 16px;
+  --r-lg: 28px;
+  --r-arch: 999px 999px 24px 24px;
+  --r-pill: 999px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --dur-micro: 140ms;
+  --dur-ui: 200ms;
+  --dur-reveal: 800ms;
+  --reveal-shift: 40px;
+
+  /* Layout */
+  --header-h: 72px;
+  --tap: 44px;
+}

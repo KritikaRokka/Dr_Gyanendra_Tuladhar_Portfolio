@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DEMO: replace example.com with the live domain -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.example.com/</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.example.com/about.html</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.example.com/work.html</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.example.com/writing.html</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.example.com/contact.html</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.example.com/article.html</loc>
+    <lastmod>2026-10-02</lastmod>
+  </url>
+</urlset>
