@@ -18,11 +18,23 @@
     <lastmod>2026-10-02</lastmod>
   </url>
   <url>
+    <loc>https://www.example.com/gallery.html</loc>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
     <loc>https://www.example.com/contact.html</loc>
     <lastmod>2026-10-02</lastmod>
   </url>
   <url>
     <loc>https://www.example.com/article.html</loc>
     <lastmod>2026-10-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.example.com/services.html</loc>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://www.example.com/thesis.html</loc>
+    <lastmod>2026-10-05</lastmod>
   </url>
 </urlset>

@@ -2,7 +2,7 @@
    States: empty (hints only), invalid (inline errors), loading, error (retry), success.
    Hooks: [data-form], [data-field], [data-error], [data-form-status], [data-form-submit],
           [data-form-success], [data-form-reset].
-   Set data-endpoint on the form to post to a real URL. Without it, the form runs in demo mode. */
+   Set data-endpoint on the form to post to a real URL. Without it, the form opens the visitor's email app with the message filled in. */
 (function () {
   "use strict";
 
@@ -136,7 +136,14 @@
     setLoading(true);
 
     if (!endpoint) {
-      window.setTimeout(finish, 900);
+      // No form service set up: open the visitor's email app with the message filled in
+      var target = (form.getAttribute("action") || "").replace(/^mailto:/, "");
+      var body = "Name: " + form.elements.name.value.trim() +
+        "\nEmail: " + form.elements.email.value.trim() +
+        "\nOrganization: " + form.elements.organization.value.trim() +
+        "\n\n" + form.elements.message.value.trim();
+      window.location.href = "mailto:" + target + "?subject=" + encodeURIComponent("Inquiry from website") + "&body=" + encodeURIComponent(body);
+      window.setTimeout(finish, 600);
       return;
     }
 

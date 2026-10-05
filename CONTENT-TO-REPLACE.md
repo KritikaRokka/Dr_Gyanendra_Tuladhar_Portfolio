@@ -54,3 +54,12 @@ From `REPORT ON SIGNIFICANT ACHIEVEMENTS AT INSTITUTIONS` and the CV. These are 
 
 - The contact form has no backend. Set `data-endpoint` in `contact.html`. The `mailto:` action is a no-JavaScript fallback.
 - The `<!-- WP: dynamic -->` markers use the exact label requested. They are the only place that word appears.
+
+## Added in October 2026 (from the CV, report and consultancy document)
+
+- Services page (`services.html`): written in first person from `Tourism Consultancy in Nepal.docx`. Confirm the wording.
+- About: full education, thesis, languages, awards, affiliations, teaching and curriculum, from the CV. The award "Mahendra Vidya Bhushan" is spelled "Vhushan" in the CV.
+- Work: all 46 assignments, 6 industry roles and 27 papers and workshops. Categories on the filter buttons are my grouping.
+- Writing: 45 publications. `article.html` (Reimagining Tourism for a New Nepal) and `thesis.html` are rewritten from the CV annexes. The party-addressed proposal in the CV was not published.
+- Still private and not published: birth date, home address, phone numbers, personal email, referees.
+- Contact form: without a form service it opens the visitor's email app. Replace `hello@example.com` in `contact.html`, or set `data-endpoint`.
