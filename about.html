@@ -33,7 +33,7 @@
 <link rel="stylesheet" href="assets/css/sections.css">
 <link rel="stylesheet" href="assets/css/utilities.css">
 <script>document.documentElement.classList.add("js");</script>
-<!-- DEMO: sameAs, alumniOf and the example.com domain are placeholders. Replace before launch. -->
+<!-- DEMO: the example.com domain is a placeholder. Replace before launch. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -47,12 +47,22 @@
       "image": "https://www.example.com/assets/images/portrait-600.jpg",
       "url": "https://www.example.com/",
       "sameAs": [
-        "https://www.linkedin.com/"
+        "https://www.linkedin.com/in/dr-gyanendra-ratna-tuladhar-a53a7224/"
       ],
-      "alumniOf": {
-        "@type": "EducationalOrganization",
-        "name": "University in Sofia, Bulgaria"
-      },
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Sofia University, Bulgaria"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Economic University, Varna, Bulgaria"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Tribhuvan University, Nepal"
+        }
+      ],
       "knowsAbout": [
         "Tourism economics",
         "Tourism policy and planning",
@@ -102,11 +112,25 @@
     </button>
     <nav class="nav" id="site-menu" aria-label="Main" data-nav>
       <ul class="nav__list">
+          <li class="nav__mobile-only"><a class="nav__link" href="index.html">Home</a></li>
           <li><a class="nav__link" href="about.html" aria-current="page">About</a></li>
+          <li><a class="nav__link" href="services.html">Services</a></li>
           <li><a class="nav__link" href="work.html">Work</a></li>
           <li><a class="nav__link" href="writing.html">Writing</a></li>
+          <li><a class="nav__link" href="gallery.html">Frames</a></li>
       </ul>
-      <a class="btn btn--primary nav__cta" href="contact.html">Contact</a>
+      <a class="btn btn--primary nav__cta" href="contact.html">Let&rsquo;s talk</a>
+      <div class="nav__extra">
+        <p class="nav__extra-title">Contact</p>
+        <ul class="nav__extra-list">
+          <li><a href="mailto:hello@example.com"><!-- DEMO -->hello@example.com</a></li>
+          <li><a href="tel:+97715550142"><!-- DEMO -->+977 1 555 0142</a></li>
+          <li><!-- DEMO -->Kathmandu, Nepal</li>
+          <li><a href="https://www.linkedin.com/in/dr-gyanendra-ratna-tuladhar-a53a7224/" target="_blank" rel="noopener">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+        </ul>
+        <p class="nav__extra-name">Gyanendra Tuladhar</p>
+        <p class="nav__extra-text">Tourism economist. Ph.D., Tourism Economical Science.</p>
+      </div>
     </nav>
   </div>
 </header>
@@ -119,6 +143,7 @@
   <div class="container">
     <h1>About</h1>
     <p class="page-hero__lead">Tourism economist. Ph.D. in Tourism Economical Science. More than three decades in Nepal&rsquo;s tourism sector.</p>
+    <ul class="page-hero__jump"><li><a href="#education">Education</a></li><li><a href="#thesis">Thesis</a></li><li><a href="#teaching">Teaching</a></li><li><a href="#affiliations">Affiliations</a></li><li><a href="#recognition-title">Awards</a></li></ul>
     
   </div>
 </section>
@@ -157,92 +182,182 @@
   </div>
 </section>
 
-<section class="section" aria-labelledby="education-title">
+<section class="section" id="education" aria-labelledby="education-title">
   <div class="container container--narrow">
     <div class="section-head" data-reveal>
-      <h2 id="education-title">Education and affiliations</h2>
+      <h2 id="education-title">Education</h2>
     </div>
-    <!-- WP: dynamic (education loop) -->
-<ol class="exp" data-reveal-group>
+    <ol class="exp" data-reveal-group>
   <li class="exp__row">
-    <p class="exp__period"><!-- DEMO -->1993</p>
+    <p class="exp__period">1993</p>
     <div>
       <h3 class="exp__role">Ph.D., Tourism Economical Science</h3>
-      <p class="exp__org">Sofia, Bulgaria</p>
+      <p class="exp__org">Sofia University, Higher Testimonial Committee, Sofia, Bulgaria</p>
     </div>
     <ul class="exp__tags">
-      <li>Doctoral thesis on tourism economics</li>
+      <li>Equivalence honoured by Tribhuvan University, Kirtipur</li><li>Thesis: Econometric Modulation of International Tourism Development in the Kingdom Nepal for Sustainable Development</li>
     </ul>
   </li>
   <li class="exp__row">
-    <p class="exp__period"><!-- DEMO -->1985</p>
+    <p class="exp__period">1987</p>
     <div>
-      <h3 class="exp__role">Master&rsquo;s degree</h3>
-      <p class="exp__org">Tribhuvan University</p>
+      <h3 class="exp__role">B.Sc. and M.Sc. (M.A.), Tourism Economy</h3>
+      <p class="exp__org">Economic University, VINS, Varna, Bulgaria</p>
     </div>
     <ul class="exp__tags">
-      <li>Economics</li>
+      <li>First Class Honours</li><li>Equivalence honoured by Tribhuvan University</li><li>Thesis: Development of International Tourism in the Kingdom Nepal</li>
     </ul>
   </li>
   <li class="exp__row">
-    <p class="exp__period"><!-- DEMO -->1993 to present</p>
+    <p class="exp__period">1980</p>
     <div>
-      <h3 class="exp__role">Member</h3>
-      <p class="exp__org">Nepal Tourism Professionals Association</p>
+      <h3 class="exp__role">B.Com., Commerce and Public Administration</h3>
+      <p class="exp__org">Tribhuvan University, Public Youth Campus, Kathmandu</p>
     </div>
-    <ul class="exp__tags">
-      <li>Annual meetings and working groups</li>
-    </ul>
   </li>
-</ol>
+    </ol>
+    <div class="two-col u-mt-7" data-reveal>
+      <div>
+        <h3 class="mini-title">Key subjects studied</h3>
+        <ul class="plain-list"><li>Sustainable Tourism Development and Management</li><li>Tourism Marketing and Promotion (NTO marketing and promotion)</li><li>Econometric Modulation of Statistics in Tourism</li><li>Application of Mathematical Methods in Tourism Economics</li><li>Consumer Behavior and Motivation in Tourism</li><li>Business Management in Tourism</li><li>Geography, History and Culture in Tourism</li><li>Social Psychology, Organization and Technology in Tourism</li><li>Hotel and Catering Management</li><li>Accounting, Effectiveness, Efficiency and Pricing in Tourism Management</li><li>International Monetary and Financial Relations in Tourism</li><li>Micro Finance and Credit in Tourism</li><li>Political Economics in Tourism</li><li>Planning and Balance of National Economy</li><li>Automated Management Systems, Computing Technology and Programming</li><li>Seminar Management and Specialized Tourist Guide courses</li></ul>
+      </div>
+      <div>
+        <h3 class="mini-title">Training</h3>
+        <ul class="plain-list"><li><strong>1985</strong> Trekking Tourism, Varna University</li><li><strong>1988</strong> City Tourist Guide, HMTTC, Kathmandu</li><li><strong>1993</strong> Computer software applications and SPSS statistics, ACMBUL, Varna</li><li><strong>1996</strong> Tour operations, Yeti Travels (Pvt.) Ltd.</li><li><strong>1997</strong> Tour operations and tour guiding, SATS human resource development programme, Kathmandu</li><li><strong>2002</strong> GIS applications (ArcView, ArcInfo, ILWIS), Tribhuvan University</li></ul>
+        <h3 class="mini-title u-mt-6">Languages</h3>
+        <ul class="plain-list"><li><strong>Newari</strong> Mother tongue</li><li><strong>Nepali</strong> Native</li><li><strong>English</strong> Excellent: reading, writing, speaking</li><li><strong>Bulgarian</strong> Excellent: reading, writing, speaking</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="thesis" aria-labelledby="thesis-title">
+  <div class="container container--narrow">
+    <div class="section-head" data-reveal>
+      <h2 id="thesis-title">Doctoral thesis</h2>
+    </div>
+    <div class="prose prose--left" data-reveal>
+      <p class="lead">Tourism is a &ldquo;dream industry&rdquo;. It sells a fantasy, and in a world of imagination the potential is endless.</p>
+      <p>My thesis argued that Nepal is physically ideal for vibrant international tourism, that tourism can reduce poverty when it is managed sustainably, and that Nepal&rsquo;s volatility comes from centralism, seasonality and weak infrastructure. The remedy is an integrated plan with progressive decentralization, conservation, people&rsquo;s participation, political commitment and targeted marketing.</p>
+      <p><a class="link" href="thesis.html">Read the full findings <svg class="link__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="teaching" aria-labelledby="teaching-title">
+  <div class="container container--narrow">
+    <div class="section-head" data-reveal>
+      <h2 id="teaching-title">Teaching and curriculum</h2>
+      <p class="section-head__lead">Lecturing in tourism, management and research methods since 1996.</p>
+    </div>
+    <div class="two-col" data-reveal>
+      <div>
+        <h3 class="mini-title">Courses taught</h3>
+        <ul class="plain-list"><li>Service Marketing</li><li>Leadership and Organizational Behavior</li><li>Organizational Behavior and Management</li><li>Marketing for Managers</li><li>Marketing Management</li><li>Principles of Marketing</li><li>Consumer Behavior</li><li>Business Environment</li><li>Research Methodology</li><li>Research Methodology and Statistics</li><li>Research Project and Diploma Paper</li><li>Foundation of Travel and Tourism Management</li><li>Tourism in Nepal</li><li>Tourism Management</li><li>Tourism Planning and Policy</li><li>Tourism Marketing and Promotion</li><li>Sustainable Tourism for Sustainable Development</li><li>Culture and Social Psychology for Tourism</li><li>Culture Tourism</li><li>Rural Development, Ecotourism and Village Tourism</li><li>Entrepreneurship Development in Nepal</li><li>Finance and Capital Structure Management</li><li>Travel Trade Management and Tourist Service Operation</li><li>Tour, Trek and Rafting Management</li></ul>
+      </div>
+      <div>
+        <h3 class="mini-title">Universities and colleges</h3>
+        <ul class="plain-list"><li>Tribhuvan University: Public Youth Campus, Padma Kanya Campus, Trichandra Multiple Campus</li><li>Prime College, Khusibun, Kathmandu</li><li>Kathmandu University: Little Angels College of Management</li><li>Nepal Academy of Tourism and Hospitality Management (NATHM)</li><li>SAAN International College, Faculty of Management</li><li>Nepal College of Travel and Tourism Management</li><li>REHDON College, Samakhusi, Kathmandu</li></ul>
+        <h3 class="mini-title u-mt-6">Curriculum developed for Tribhuvan University</h3>
+        <ul class="plain-list"><li>Fundamentals of Travel and Tourism Management (1st semester) (2023, 2025)</li><li>Tourism in Nepal (2nd semester) (2023, 2025)</li><li>Culture and Social Psychology for Tourism (4th semester) (2021, 2023)</li><li>Sustainable Tourism Development (5th semester)</li><li>Tour Guiding and Escorting (5th semester)</li><li>Tourism Entrepreneurship Development (5th semester)</li><li>Tourism Geography (5th semester)</li><li>Adventure Tourism (6th semester)</li><li>Event Management (6th semester)</li><li>Tourism in Nepalese Society and Politics 2 (6th semester)</li><li>Tourism Planning and Policies (6th semester)</li><li>Visitors Management (7th semester)</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="affiliations" aria-labelledby="affil-title">
+  <div class="container container--narrow">
+    <div class="section-head" data-reveal>
+      <h2 id="affil-title">Professional affiliations</h2>
+      <p class="section-head__lead">Boards, associations, societies and fellowships since 1990.</p>
+    </div>
+    <ol class="exp exp--two">
+  <li class="exp__row"><p class="exp__period">2017</p><div><h3 class="exp__role">Treasurer and Executive Director</h3></div><p>Nepal Ph.D. Association</p></li>
+  <li class="exp__row"><p class="exp__period">2015</p><div><h3 class="exp__role">Executive Director</h3></div><p>Udaaya Samaj, Kathmandu</p></li>
+  <li class="exp__row"><p class="exp__period">2013</p><div><h3 class="exp__role">Board of Director</h3></div><p>Kathmandu Upatyaka Khanepani Limited (KUKL)</p></li>
+  <li class="exp__row"><p class="exp__period">2011</p><div><h3 class="exp__role">Board of Director</h3></div><p>Nepal Water Supply Corporation</p></li>
+  <li class="exp__row"><p class="exp__period">2010</p><div><h3 class="exp__role">Faculty Member and Lecturer</h3></div><p>Public Youth Campus</p></li>
+  <li class="exp__row"><p class="exp__period">2006</p><div><h3 class="exp__role">Advisor</h3></div><p>Village Tourism Promotion Forum Nepal (VITOF-N)</p></li>
+  <li class="exp__row"><p class="exp__period">2005</p><div><h3 class="exp__role">Lecturer</h3></div><p>Nepal Academy of Tourism and Hotel Management, Rabi Bhavan</p></li>
+  <li class="exp__row"><p class="exp__period">2005</p><div><h3 class="exp__role">Life Member</h3></div><p>Dharmodaya Sabha, national Buddhist organization</p></li>
+  <li class="exp__row"><p class="exp__period">2003</p><div><h3 class="exp__role">Life Member</h3></div><p>Heritage Society of Bishalnagar-Hadigaon, Kathmandu</p></li>
+  <li class="exp__row"><p class="exp__period">2002</p><div><h3 class="exp__role">Lecturer in Culture Tourism</h3></div><p>Tribhuvan University, Padma Kanya Multiple Campus</p></li>
+  <li class="exp__row"><p class="exp__period">2002</p><div><h3 class="exp__role">E-Profession Member</h3></div><p>Ecotourism Society, U.S.A.</p></li>
+  <li class="exp__row"><p class="exp__period">2001</p><div><h3 class="exp__role">Member</h3></div><p>Sustainable Tourism Network, Nepal Tourism Board</p></li>
+  <li class="exp__row"><p class="exp__period">1999</p><div><h3 class="exp__role">Senior Consultant</h3></div><p>National Travel and Tourism Consultants</p></li>
+  <li class="exp__row"><p class="exp__period">1999</p><div><h3 class="exp__role">Management Consultant</h3></div><p>Thamel Tourism Development Committee</p></li>
+  <li class="exp__row"><p class="exp__period">1998</p><div><h3 class="exp__role">Member, Planning and Resource Mobilization</h3></div><p>Siddhartha University, Nala</p></li>
+  <li class="exp__row"><p class="exp__period">1997</p><div><h3 class="exp__role">Member</h3></div><p>Nepal-Israel Culture and Friendship Association</p></li>
+  <li class="exp__row"><p class="exp__period">1997</p><div><h3 class="exp__role">Member</h3></div><p>Nepal-Australia Culture and Friendship Association</p></li>
+  <li class="exp__row"><p class="exp__period">1996</p><div><h3 class="exp__role">Member</h3></div><p>Management Association of Nepal</p></li>
+  <li class="exp__row"><p class="exp__period">1996</p><div><h3 class="exp__role">Faculty Member and Lecturer</h3></div><p>REHDON College, and Nepal College of Travel and Tourism Management</p></li>
+  <li class="exp__row"><p class="exp__period">1996</p><div><h3 class="exp__role">Executive Director</h3></div><p>Nepal-German Hilfe Beilngries, Saligram Balgriha</p></li>
+  <li class="exp__row"><p class="exp__period">1995</p><div><h3 class="exp__role">Life Member</h3></div><p>Nepal Heritage Society, Kathmandu</p></li>
+  <li class="exp__row"><p class="exp__period">1994</p><div><h3 class="exp__role">Member</h3></div><p>Tourist Guide Association of Nepal</p></li>
+  <li class="exp__row"><p class="exp__period">1994</p><div><h3 class="exp__role">Executive Director</h3></div><p>Kathmandu Environment Education Project</p></li>
+  <li class="exp__row"><p class="exp__period">1990 to 1993</p><div><h3 class="exp__role">Fellowships</h3></div><p>Tourism Concern (U.K.), Association of Business Executives (U.K.), Association for Computing Machinery (U.S.A.), ACMBUL Sofia</p></li>
+    </ol>
   </div>
 </section>
 
 <section class="section" aria-labelledby="recognition-title">
   <div class="container">
     <div class="section-head" data-reveal>
-      <h2 id="recognition-title">Recognition</h2>
+      <h2 id="recognition-title">Honours and awards</h2>
     </div>
     <div class="recognition">
       <div>
-        <!-- WP: dynamic (recognition loop) -->
-<ol class="exp" data-reveal-group>
+        <ol class="exp" data-reveal-group>
   <li class="exp__row">
-    <p class="exp__period"><!-- DEMO -->2019</p>
+    <p class="exp__period">1993</p>
     <div>
-      <h3 class="exp__role">Tourism Service Recognition</h3>
-      <p class="exp__org">Himalayan Tourism Association</p>
+      <h3 class="exp__role">Ph.D. Merit Award</h3>
+      <p class="exp__org">Higher Testimonial Committee, Economics University, Sofia</p>
     </div>
     <ul class="exp__tags">
-      <li>For contributions to national tourism planning</li>
+      <li>Tourism Economical Science</li>
     </ul>
   </li>
   <li class="exp__row">
-    <p class="exp__period"><!-- DEMO -->2014</p>
+    <p class="exp__period">1987</p>
     <div>
-      <h3 class="exp__role">Outstanding Contribution Award</h3>
-      <p class="exp__org">Nepal Hospitality Forum</p>
+      <h3 class="exp__role">M.Sc. First Class Honours</h3>
+      <p class="exp__org">Economic University, Varna, Bulgaria</p>
     </div>
     <ul class="exp__tags">
-      <li>For work on tourism standards and training</li>
+      <li>Tourism Economics</li>
     </ul>
   </li>
   <li class="exp__row">
-    <p class="exp__period"><!-- DEMO -->2009</p>
+    <p class="exp__period">1996</p>
     <div>
-      <h3 class="exp__role">Distinguished Service Medal</h3>
-      <p class="exp__org">Tourism Research Society</p>
+      <h3 class="exp__role">Mahendra Vidya Bhushan</h3>
+      <p class="exp__org">His Majesty King Birendra Bir Bikram Shah Dev</p>
     </div>
-    <ul class="exp__tags">
-      <li>For research on trekking and community tourism</li>
-    </ul>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">2000</p>
+    <div>
+      <h3 class="exp__role">Scholarly Honoured, Gold Medal</h3>
+      <p class="exp__org">Shree Degukhyo Guthi</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">2006</p>
+    <div>
+      <h3 class="exp__role">Judge, Nationwide Essay Competition</h3>
+      <p class="exp__org">Nepal Tourism Board Award</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Honoured</p>
+    <div>
+      <h3 class="exp__role">Scholarly achievement</h3>
+      <p class="exp__org">Village Tourism Promotion Forum and Nepal Tourism Board</p>
+    </div>
   </li>
 </ol>
-        <!-- WP: dynamic (testimonials) -->
-        <figure class="quote" data-reveal>
-          <blockquote><p><!-- DEMO -->He turned a long list of ideas into a plan that three ministries could sign.</p></blockquote>
-          <figcaption><!-- DEMO -->Sita Sharma, <!-- DEMO -->Programme Manager, Example Development Agency</figcaption>
-        </figure>
+        
       </div>
       <div class="mosaic" data-reveal-group>
         <figure class="figure"><picture><source type="image/webp" srcset="assets/images/agm-group-480.webp 480w, assets/images/agm-group-960.webp 960w, assets/images/agm-group-1600.webp 1600w" sizes="(min-width: 960px) 22vw, 45vw"><img src="assets/images/agm-group-960.jpg" width="1600" height="1200" alt="Large group posing together in a meeting hall" loading="lazy" decoding="async"></picture></figure>
@@ -254,50 +369,44 @@
   </div>
 </section>
 
-<!-- WP: template-part: cta-band -->
-<section class="cta on-dark" aria-labelledby="cta-title">
-  <div class="cta__bg" aria-hidden="true">
-    <picture><source type="image/webp" srcset="assets/images/mountain-ceremony-480.webp 480w, assets/images/mountain-ceremony-960.webp 960w, assets/images/mountain-ceremony-1600.webp 1600w" sizes="100vw"><img src="assets/images/mountain-ceremony-960.jpg" width="1600" height="1200" alt="" loading="lazy" decoding="async"></picture>
-  </div>
-  <div class="container">
-    <div class="cta__panel glass glass--dark" data-reveal>
-      <h2 id="cta-title">Tell me about your project</h2>
-      <p>Send a short note on what you are planning. I reply by email.</p>
-      <a class="btn btn--cream" href="contact.html">Send an inquiry <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
-  </div>
-</section>
-
 </main>
 
 <!-- WP: footer.php -->
 <footer class="site-footer">
+  <div class="site-footer__stage">
+      <div class="container site-footer__top">
+        <div class="site-footer__lead">
+          <div class="site-footer__cols">
+            <div>
+              <p class="site-footer__title">Pages</p>
+              <ul class="site-footer__list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="writing.html">Writing</a></li>
+                <li><a href="gallery.html">Frames</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="site-footer__title">Contact</p>
+              <!-- WP: dynamic (contact details) -->
+              <ul class="site-footer__list">
+                <li><a href="mailto:hello@example.com"><!-- DEMO -->hello@example.com</a></li>
+                <li><a href="tel:+97715550142"><!-- DEMO -->+977 1 555 0142</a></li>
+                <li><!-- DEMO -->Kathmandu, Nepal</li>
+              </ul>
+            </div>
+          </div>
+          <div class="site-footer__brand">
+            <p class="site-footer__name">Dr. Gyanendra<br>Tuladhar</p>
+            <p class="u-mt-5">Tourism economist. Ph.D., Tourism Economical Science.</p>
+          </div>
+        </div>
+      </div>
+  </div>
   <div class="container">
-    <div class="site-footer__grid">
-      <div>
-        <p class="site-footer__name">Gyanendra<br>Tuladhar</p>
-        <p class="u-mt-5">Tourism economist. Ph.D., Tourism Economical Science.</p>
-      </div>
-      <div>
-        <p class="site-footer__title">Pages</p>
-        <ul class="site-footer__list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="writing.html">Writing</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="site-footer__title">Contact</p>
-        <!-- WP: dynamic (contact details) -->
-        <ul class="site-footer__list">
-          <li><a href="mailto:hello@example.com"><!-- DEMO -->hello@example.com</a></li>
-          <li><a href="tel:+97715550142"><!-- DEMO -->+977 1 555 0142</a></li>
-          <li><!-- DEMO -->Kathmandu, Nepal</li>
-        </ul>
-      </div>
-    </div>
     <p class="site-footer__legal">&copy; 2026 Dr. Gyanendra Ratna Tuladhar. All rights reserved.</p>
   </div>
 </footer>

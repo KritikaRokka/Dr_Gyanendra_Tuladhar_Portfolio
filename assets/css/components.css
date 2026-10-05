@@ -88,6 +88,21 @@
   border-color: var(--c-cream);
 }
 
+.btn--accent {
+  background: #b34700;
+  color: var(--c-cream);
+  border-color: #b34700;
+  transition: transform var(--dur-micro) var(--ease-out), background 250ms, border-color 250ms;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn--accent:hover {
+    background: #8f3800;
+    border-color: #8f3800;
+    transform: translateY(-2px);
+  }
+}
+
 .btn[disabled],
 .btn[aria-disabled="true"] {
   opacity: 0.6;
@@ -300,9 +315,9 @@ html:not(.js) .site-header__bar::before {
   align-items: center;
   min-height: var(--tap);
   font-family: var(--font-display);
-  font-size: clamp(3rem, 16vw, 5rem);
+  font-size: 1.5rem;
   text-transform: uppercase;
-  line-height: 1.05;
+  line-height: 1.2;
 }
 
 .nav__link[aria-current="page"]::after {
@@ -318,10 +333,12 @@ html:not(.js) .site-header__bar::before {
 .nav__cta {
   margin-top: var(--s-6);
   align-self: flex-start;
+  background: #b34700;
+  border-color: #b34700;
 }
 
 .nav__cta[aria-current="page"] {
-  box-shadow: 0 0 0 3px var(--c-cream), 0 0 0 5px var(--c-ink);
+  box-shadow: 0 0 0 3px var(--c-cream), 0 0 0 5px #b34700;
 }
 
 /* No-JS: keep the nav reachable on small screens */
@@ -468,6 +485,20 @@ html:not(.js) .nav__link {
   font-size: var(--fs-h2);
 }
 
+.section-head--split {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--s-4) var(--s-6);
+  margin-bottom: var(--s-7);
+  text-align: left;
+}
+
+.section-head--split .section-head__lead {
+  margin-left: 0;
+}
+
 .section-head__lead {
   max-width: 46ch;
   margin: var(--s-4) auto 0;
@@ -509,18 +540,33 @@ html:not(.js) .nav__link {
   color: var(--c-ink-soft);
 }
 
-/* ---------- Project card (carousel, uniform size) ---------- */
+/* ---------- Project card (carousel, uniform size) ----------
+   Editorial: framed photo with a number and arrow badge, caption set below on the page. */
 .project-card {
   position: relative;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-4);
+  color: var(--c-ink);
+}
+
+.project-card__media {
+  position: relative;
   aspect-ratio: 4 / 5;
   overflow: hidden;
   border-radius: var(--r-lg);
-  background: var(--c-ink);
-  color: var(--c-cream);
+  background: var(--c-cream-2);
 }
 
-.project-card__media,
+.project-card__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(13, 13, 13, 0.28), transparent 35%);
+  pointer-events: none;
+}
+
+.project-card__media picture,
 .project-card__media img {
   position: absolute;
   inset: 0;
@@ -530,20 +576,32 @@ html:not(.js) .nav__link {
 }
 
 .project-card__media img {
-  transition: transform 280ms var(--ease-out);
+  transition: transform 700ms var(--ease-out);
   -webkit-user-drag: none;
   user-select: none;
 }
 
-.project-card__panel {
+.project-card::after {
+  content: "\2197";
   position: absolute;
-  left: var(--s-3);
-  right: var(--s-3);
-  bottom: var(--s-3);
+  z-index: 1;
+  top: var(--s-4);
+  right: var(--s-4);
   display: grid;
-  gap: var(--s-1);
-  padding: var(--s-4);
-  border-radius: var(--r-md);
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--c-cream);
+  color: var(--c-ink);
+  font-size: 1.25rem;
+  transition: background 300ms, color 300ms, transform 500ms var(--ease-out);
+}
+
+.project-card__panel {
+  display: grid;
+  gap: var(--s-2);
+  padding: 0 var(--s-1);
 }
 
 .project-card__meta {
@@ -551,17 +609,34 @@ html:not(.js) .nav__link {
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--c-butter);
+  color: var(--c-accent);
 }
 
 .project-card__title {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   line-height: 1.25;
+  background: linear-gradient(currentColor, currentColor) left bottom / 0 1.5px no-repeat;
+  transition: background-size 500ms var(--ease-out);
+  width: fit-content;
+}
+
+.project-card:focus-visible .project-card__title {
+  background-size: 100% 1.5px;
 }
 
 @media (hover: hover) and (pointer: fine) {
   .project-card:hover .project-card__media img {
-    transform: scale(1.04);
+    transform: scale(1.06);
+  }
+
+  .project-card:hover .project-card__title {
+    background-size: 100% 1.5px;
+  }
+
+  .project-card:hover::after {
+    background: var(--c-accent);
+    color: var(--c-cream);
+    transform: rotate(45deg);
   }
 }
 
@@ -585,7 +660,7 @@ html:not(.js) .nav__link {
 
 .carousel__item {
   flex: none;
-  width: min(78vw, 340px);
+  width: min(80vw, 380px);
   scroll-snap-align: start;
 }
 
@@ -920,4 +995,437 @@ textarea.field__input {
 
 .form-success:focus {
   outline: none;
+}
+
+/* ---------- Nav hover effects ---------- */
+.nav__link {
+  transition: color 250ms;
+}
+
+.nav__cta {
+  transition: transform var(--dur-micro) var(--ease-out), background 250ms, border-color 250ms, box-shadow 300ms;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .nav__link:hover {
+    color: var(--c-accent);
+  }
+
+  .nav__cta:hover {
+    background: #8f3800;
+    border-color: #8f3800;
+    box-shadow: 0 8px 20px rgba(179, 71, 0, 0.35);
+  }
+}
+
+@media (min-width: 880px) {
+  .nav__link:not([aria-current="page"])::after {
+    content: "";
+    position: absolute;
+    left: var(--s-4);
+    right: var(--s-4);
+    bottom: 8px;
+    height: 2px;
+    background: var(--c-accent);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 350ms var(--ease-out);
+  }
+
+  .nav__link:not([aria-current="page"]):hover::after,
+  .nav__link:not([aria-current="page"]):focus-visible::after {
+    transform: scaleX(1);
+  }
+}
+
+
+/* ---------- Mobile header and menu: compact bar, organized menu ---------- */
+.nav__extra {
+  display: none;
+}
+
+@media (max-width: 879.98px) {
+  :root {
+    --header-h: 56px;
+  }
+
+  .site-header {
+    padding-top: var(--s-2);
+  }
+
+  .site-header__bar {
+    min-height: 48px;
+    padding: var(--s-1) var(--s-1) var(--s-1) var(--s-4);
+  }
+
+  .logo {
+    min-height: 40px;
+    font-size: 1.25rem;
+  }
+
+  .nav-toggle {
+    min-height: 38px;
+    min-width: 38px;
+    gap: var(--s-2);
+    padding: 0 var(--s-3);
+    font-size: 0.8125rem;
+  }
+
+  .nav-toggle__bars {
+    width: 15px;
+    height: 8px;
+  }
+
+  .nav-toggle[aria-expanded="true"] .nav-toggle__bars::before {
+    transform: translateY(3px) rotate(45deg);
+  }
+
+  .nav-toggle[aria-expanded="true"] .nav-toggle__bars::after {
+    transform: translateY(-3px) rotate(-45deg);
+  }
+
+  .nav {
+    justify-content: flex-start;
+    overflow-y: auto;
+    padding: calc(var(--header-h) + var(--s-6)) var(--gutter) var(--s-6);
+  }
+
+  .nav__list {
+    gap: 0;
+    border-top: 1px solid var(--c-line-strong);
+  }
+
+  .nav__list li {
+    border-bottom: 1px solid var(--c-line);
+  }
+
+  html.js .nav__link {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    min-height: 52px;
+    padding: 0;
+    font-size: 1.375rem;
+    letter-spacing: 0.01em;
+  }
+
+  html.js .nav__link::before {
+    content: "\2192";
+    order: 2;
+    font-family: var(--font-text);
+    font-size: 1rem;
+    color: var(--c-ink-soft);
+    transition: transform 250ms var(--ease-out), color 250ms;
+  }
+
+  html.js .nav__link:active::before {
+    transform: translateX(4px);
+    color: var(--c-accent);
+  }
+
+  html.js .nav__link[aria-current="page"] {
+    color: var(--c-accent);
+  }
+
+  html.js .nav__link[aria-current="page"]::after {
+    display: none;
+  }
+
+  .nav__cta {
+    align-self: stretch;
+    justify-content: center;
+    min-height: 48px;
+    margin-top: var(--s-5);
+  }
+
+  .nav__extra {
+    display: block;
+    margin-top: var(--s-6);
+    padding-top: var(--s-5);
+    border-top: 1px solid var(--c-line-strong);
+  }
+
+  html:not(.js) .nav__extra {
+    display: none;
+  }
+
+  .nav__extra-title {
+    margin-bottom: var(--s-2);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--c-accent);
+  }
+
+  .nav__extra-list {
+    display: grid;
+    gap: var(--s-1);
+    font-size: 0.9375rem;
+  }
+
+  .nav__extra-list a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 36px;
+  }
+
+  .nav__extra-name {
+    margin-top: var(--s-5);
+    font-family: var(--font-display);
+    font-size: 1.125rem;
+    text-transform: uppercase;
+  }
+
+  .nav__extra-text {
+    margin-top: var(--s-1);
+    font-size: 0.8125rem;
+    color: var(--c-ink-soft);
+  }
+}
+
+@media (min-width: 880px) {
+  .nav__mobile-only {
+    display: none;
+  }
+}
+
+/* Mobile footer: the menu already holds the links and contact details, so only the copyright stays */
+@media (max-width: 879.98px) {
+  .site-footer {
+    padding-block: var(--s-5);
+  }
+
+  .site-footer__grid {
+    display: none;
+  }
+
+  .site-footer__legal {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
+    text-align: center;
+  }
+}
+
+/* Footer: links, contact and brand on the left; call-to-action card on the right, as tall as the left side */
+.site-footer {
+  padding-block: 0;
+}
+
+.site-footer__stage {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding-block: var(--s-8);
+}
+
+.site-footer__stage .cta__bg::after {
+  background: linear-gradient(90deg, rgba(13, 13, 13, 0.7), rgba(13, 13, 13, 0.5));
+}
+
+.site-footer__top {
+  display: grid;
+  gap: var(--s-8);
+}
+
+.site-footer__cols {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--s-6);
+  align-content: start;
+}
+
+.site-footer__brand {
+  margin-top: var(--s-8);
+}
+
+.site-footer__card {
+  display: flex;
+}
+
+.site-footer__card .cta__panel {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: var(--s-6);
+  width: 100%;
+  max-width: none;
+  padding: var(--s-7);
+}
+
+.cta__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-3);
+  font-size: var(--fs-caption);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--c-butter);
+}
+
+.cta__eyebrow::before {
+  content: "";
+  width: 2rem;
+  height: 1px;
+  background: currentColor;
+}
+
+.site-footer__card .cta__body {
+  align-self: center;
+}
+
+.site-footer__card .cta__panel h2 {
+  max-width: none;
+  font-size: clamp(3.5rem, 1.6rem + 4.6vw, 6.5rem);
+  line-height: 1;
+  line-height: 1.02;
+}
+
+.site-footer__card .cta__panel p {
+  max-width: 30ch;
+  margin-top: var(--s-5);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: rgba(255, 253, 249, 0.8);
+}
+
+.site-footer__card .cta__panel .btn {
+  justify-content: space-between;
+  width: 100%;
+  min-height: 60px;
+  margin-top: 0;
+  padding-inline: var(--s-6);
+}
+
+.site-footer .site-footer__legal {
+  margin-top: 0;
+  padding-block: var(--s-5);
+  border-top: 0;
+  text-align: center;
+}
+
+@media (min-width: 880px) {
+  .site-footer__top {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: var(--s-9);
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 879.98px) {
+  .site-footer__stage {
+    padding-block: var(--s-7);
+  }
+
+  .site-footer__lead {
+    display: none;
+  }
+
+  .site-footer__stage:not(:has(.site-footer__card)) {
+    display: none;
+  }
+
+  .site-footer__card .cta__panel {
+    gap: var(--s-5);
+    padding: var(--s-6) var(--s-5);
+  }
+
+  .site-footer__card .cta__panel h2 {
+    max-width: none;
+    font-size: 3.375rem;
+  }
+
+
+  .site-footer__top {
+    gap: 0;
+  }
+}
+
+/* Footer without the call-to-action card (Contact page): name on the left, links and contact on the right */
+@media (min-width: 880px) {
+  .site-footer__top:not(:has(.site-footer__card)) {
+    align-items: start;
+  }
+
+  .site-footer__top:not(:has(.site-footer__card)) .site-footer__lead {
+    display: contents;
+  }
+
+  .site-footer__top:not(:has(.site-footer__card)) .site-footer__brand {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 0;
+  }
+
+  .site-footer__top:not(:has(.site-footer__card)) .site-footer__cols {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+.site-footer__name--accent {
+  color: #ffb06b;
+}
+
+/* ---------- Nav bar colours: logo, links and the Menu button in the accent orange ---------- */
+.logo {
+  color: #b34700;
+}
+
+.nav-toggle {
+  border-color: #b34700;
+  color: #b34700;
+}
+
+@media (min-width: 880px) {
+  .nav__link {
+    color: #b34700;
+  }
+
+  .nav__link[aria-current="page"]::after {
+    background: #b34700;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .nav__link:hover {
+    color: #8f3800;
+  }
+
+  .nav-toggle:hover {
+    background: rgba(179, 71, 0, 0.08);
+  }
+}
+
+/* ---------- Smaller desktop nav bar: links, logo and the "Let's talk" button ---------- */
+@media (min-width: 880px) {
+  .site-header__bar {
+    min-height: 52px;
+  }
+
+  .logo {
+    min-height: 40px;
+    font-size: 1.5rem;
+  }
+
+  .nav__link,
+  html:not(.js) .nav__link {
+    min-height: 40px;
+    padding: 0 var(--s-3);
+    font-size: 0.8125rem;
+  }
+
+  .nav__link[aria-current="page"]::after,
+  .nav__link:not([aria-current="page"])::after {
+    left: var(--s-3);
+    right: var(--s-3);
+    bottom: 6px;
+  }
+
+  .nav__cta {
+    min-height: 40px;
+    padding-inline: var(--s-4);
+    font-size: 0.8125rem;
+  }
 }

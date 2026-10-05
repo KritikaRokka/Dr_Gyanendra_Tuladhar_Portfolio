@@ -33,7 +33,7 @@
 <link rel="stylesheet" href="assets/css/sections.css">
 <link rel="stylesheet" href="assets/css/utilities.css">
 <script>document.documentElement.classList.add("js");</script>
-<!-- DEMO: sameAs, alumniOf and the example.com domain are placeholders. Replace before launch. -->
+<!-- DEMO: the example.com domain is a placeholder. Replace before launch. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -77,11 +77,25 @@
     </button>
     <nav class="nav" id="site-menu" aria-label="Main" data-nav>
       <ul class="nav__list">
+          <li class="nav__mobile-only"><a class="nav__link" href="index.html">Home</a></li>
           <li><a class="nav__link" href="about.html">About</a></li>
+          <li><a class="nav__link" href="services.html">Services</a></li>
           <li><a class="nav__link" href="work.html" aria-current="page">Work</a></li>
           <li><a class="nav__link" href="writing.html">Writing</a></li>
+          <li><a class="nav__link" href="gallery.html">Frames</a></li>
       </ul>
-      <a class="btn btn--primary nav__cta" href="contact.html">Contact</a>
+      <a class="btn btn--primary nav__cta" href="contact.html">Let&rsquo;s talk</a>
+      <div class="nav__extra">
+        <p class="nav__extra-title">Contact</p>
+        <ul class="nav__extra-list">
+          <li><a href="mailto:hello@example.com"><!-- DEMO -->hello@example.com</a></li>
+          <li><a href="tel:+97715550142"><!-- DEMO -->+977 1 555 0142</a></li>
+          <li><!-- DEMO -->Kathmandu, Nepal</li>
+          <li><a href="https://www.linkedin.com/in/dr-gyanendra-ratna-tuladhar-a53a7224/" target="_blank" rel="noopener">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+        </ul>
+        <p class="nav__extra-name">Gyanendra Tuladhar</p>
+        <p class="nav__extra-text">Tourism economist. Ph.D., Tourism Economical Science.</p>
+      </div>
     </nav>
   </div>
 </header>
@@ -93,20 +107,22 @@
 <section class="page-hero">
   <div class="container">
     <h1>Selected work</h1>
-    <p class="page-hero__lead">Policy, plans and field projects across Nepal.</p>
+    <p class="page-hero__lead">Policy, plans and field projects across Nepal. Six highlights, then every assignment, paper and workshop since 1987.</p>
     
   </div>
 </section>
 
-<section class="section--tight" aria-label="Projects">
+<nav class="subnav" aria-label="On this page"><div class="container"><ul><li><a href="#projects">Highlights</a></li><li><a href="#assignments">All assignments</a></li><li><a href="#industry">Industry</a></li><li><a href="#papers">Papers</a></li></ul></div></nav>
+
+<section class="section--tight" id="projects" aria-label="Projects">
   <div class="container container--narrow">
     <!-- WP: dynamic (projects loop) -->
     <article class="work-row" id="bagmati">
       <div data-reveal>
         <p class="work-row__num" aria-hidden="true">01</p>
         <h2 class="work-row__title">Bagmati Province Tourism Strategy</h2>
-        <p class="work-row__meta">15-year strategy / <!-- DEMO -->2021 to 2023</p>
-        <p class="work-row__text">A roadmap for infrastructure, people, marketing, regulation and inclusive tourism. <!-- DEMO -->Covers roads and trails, training, marketing, rules and the role of local government.</p>
+        <p class="work-row__meta">15-year strategy / Jan to Sep 2025</p>
+        <p class="work-row__text">A roadmap for infrastructure, people, marketing, regulation and inclusive tourism. Identifies the province&rsquo;s key tourism assets and positions Bagmati as a leading destination at national and international level.</p>
       </div>
       <figure class="figure work-row__media" data-reveal>
         <picture><source type="image/webp" srcset="assets/images/stage-group-480.webp 480w, assets/images/stage-group-960.webp 960w, assets/images/stage-group-1600.webp 1600w" sizes="(min-width: 880px) 50vw, 92vw"><img src="assets/images/stage-group-960.jpg" width="1600" height="1200" alt="Officials and guests seated in rows on a stage" loading="lazy" decoding="async"></picture>
@@ -116,8 +132,8 @@
       <div data-reveal>
         <p class="work-row__num" aria-hidden="true">02</p>
         <h2 class="work-row__title">Integrated Tourism Programme, Bhaktapur</h2>
-        <p class="work-row__meta">Feasibility study / <!-- DEMO -->2022</p>
-        <p class="work-row__text">Tourism potential, a flagship destination and a framework for Bhaktapur Constituency No. 1. <!-- DEMO -->Maps tourism potential in the constituency and names one flagship destination to build first.</p>
+        <p class="work-row__meta">Feasibility study / Jan to Jul 2026</p>
+        <p class="work-row__text">Tourism potential, a flagship destination and a framework for Bhaktapur Constituency No. 1. Presented to the Ministry of Culture and Tourism in Hetauda in July 2026.</p>
       </div>
       <figure class="figure work-row__media" data-reveal>
         <picture><source type="image/webp" srcset="assets/images/monastery-visit-480.webp 480w, assets/images/monastery-visit-960.webp 960w, assets/images/monastery-visit-1600.webp 1600w" sizes="(min-width: 880px) 50vw, 92vw"><img src="assets/images/monastery-visit-960.jpg" width="1600" height="1200" alt="Group of men standing in front of a painted wooden entrance" loading="lazy" decoding="async"></picture>
@@ -127,8 +143,8 @@
       <div data-reveal>
         <p class="work-row__num" aria-hidden="true">03</p>
         <h2 class="work-row__title">Tourism for Sustainable Development</h2>
-        <p class="work-row__meta">UNDP and UN-WTO / <!-- DEMO -->2002</p>
-        <p class="work-row__text">National consultant and research specialist on a sustainable tourism master plan. <!-- DEMO -->Part of a national programme that ended in a long-term sustainable tourism plan.</p>
+        <p class="work-row__meta">UNDP and UN-WTO / Apr to Jun 2002</p>
+        <p class="work-row__text">National consultant and research specialist on a sustainable tourism master plan. A long-term plan with a short-term action programme for the sustainable development of Nepal&rsquo;s tourism sector.</p>
       </div>
       <figure class="figure work-row__media" data-reveal>
         <picture><source type="image/webp" srcset="assets/images/undp-workshop-panel-480.webp 480w, assets/images/undp-workshop-panel-960.webp 960w, assets/images/undp-workshop-panel-1600.webp 1600w" sizes="(min-width: 880px) 50vw, 92vw"><img src="assets/images/undp-workshop-panel-960.jpg" width="1600" height="1200" alt="Panel table at a 2002 workshop on tourism for sustainable development" loading="lazy" decoding="async"></picture>
@@ -138,8 +154,8 @@
       <div data-reveal>
         <p class="work-row__num" aria-hidden="true">04</p>
         <h2 class="work-row__title">Nepal Tourism Development Master Plan 2008</h2>
-        <p class="work-row__meta">Deputy Team Leader / <!-- DEMO -->2008</p>
-        <p class="work-row__text">Product development, marketing, forecasting and Tourism Satellite Account orientation. <!-- DEMO -->Sets targets for new products, promotion and forecasting, with a clear owner for each.</p>
+        <p class="work-row__meta">Deputy Team Leader / Dec 2005 to Oct 2006</p>
+        <p class="work-row__text">Product development, marketing, forecasting and Tourism Satellite Account orientation. Overall coordination of the plan, with responsibility for product development and the marketing and promotion plan.</p>
       </div>
       <figure class="figure work-row__media" data-reveal>
         <picture><source type="image/webp" srcset="assets/images/community-planning-480.webp 480w, assets/images/community-planning-960.webp 960w, assets/images/community-planning-1600.webp 1600w" sizes="(min-width: 880px) 50vw, 92vw"><img src="assets/images/community-planning-960.jpg" width="1600" height="1200" alt="Participants sitting in a circle and writing notes at a planning session" loading="lazy" decoding="async"></picture>
@@ -149,8 +165,8 @@
       <div data-reveal>
         <p class="work-row__num" aria-hidden="true">05</p>
         <h2 class="work-row__title">Heritage Walks, Kathmandu</h2>
-        <p class="work-row__meta">Conservation and tourism / <!-- DEMO -->2010</p>
-        <p class="work-row__text">Guided walks that raise conservation awareness and bring local income. <!-- DEMO -->Walks through the old core link temples, courtyards and craft streets, and keep visitors a night longer.</p>
+        <p class="work-row__meta">Conservation and tourism / Nov 2002 to Apr 2003</p>
+        <p class="work-row__text">Guided walks that raise conservation awareness and bring local income. Built public awareness and industry cooperation, and spread the benefits of longer visitor stays across Kathmandu Metropolitan City.</p>
       </div>
       <figure class="figure work-row__media" data-reveal>
         <picture><source type="image/webp" srcset="assets/images/monument-group-480.webp 480w, assets/images/monument-group-719.webp 719w" sizes="(min-width: 880px) 50vw, 92vw"><img src="assets/images/monument-group-719.jpg" width="719" height="1600" alt="Group of people standing in front of a monument with prayer flags" loading="lazy" decoding="async"></picture>
@@ -160,8 +176,8 @@
       <div data-reveal>
         <p class="work-row__num" aria-hidden="true">06</p>
         <h2 class="work-row__title">Second World Buddhist Summit 2004</h2>
-        <p class="work-row__meta">Executive Director, LDT / <!-- DEMO -->2004</p>
-        <p class="work-row__text">Programme planning, finance, coordination of partners, monitoring and evaluation. <!-- DEMO -->A national event with many partners, run to a fixed budget and a monitored schedule.</p>
+        <p class="work-row__meta">Executive Director, LDT / Aug 2004 to Feb 2005</p>
+        <p class="work-row__text">Programme planning, finance, coordination of partners, monitoring and evaluation. Held 30 November to 2 December 2004, jointly by the Government of Nepal and the Lumbini Development Trust.</p>
       </div>
       <figure class="figure work-row__media" data-reveal>
         <picture><source type="image/webp" srcset="assets/images/mountain-ceremony-480.webp 480w, assets/images/mountain-ceremony-960.webp 960w, assets/images/mountain-ceremony-1600.webp 1600w" sizes="(min-width: 880px) 50vw, 92vw"><img src="assets/images/mountain-ceremony-960.jpg" width="1600" height="1200" alt="Seated guests at an outdoor ceremony with mountains behind" loading="lazy" decoding="async"></picture>
@@ -170,68 +186,749 @@
   </div>
 </section>
 
-<section class="section" id="publications" aria-labelledby="pub-title">
+<section class="section" id="assignments" aria-labelledby="assign-title">
   <div class="container container--narrow">
     <div class="section-head" data-reveal>
-      <h2 id="pub-title">Reports and papers</h2>
+      <h2 id="assign-title">All assignments</h2>
+      <p class="section-head__lead">46 consulting and planning assignments for governments, development agencies and conservation bodies, newest first.</p>
     </div>
-    <!-- WP: dynamic (publications loop) -->
-<ol class="exp" data-reveal-group>
-  <li class="exp__row">
-    <p class="exp__period"><!-- DEMO -->2023</p>
+    <div class="filters" role="group" aria-label="Filter assignments by type" data-filters="assign-list">
+      <button class="chip is-on" type="button" data-filter="all" aria-pressed="true">All</button><button class="chip" type="button" data-filter="policy" aria-pressed="false">Policy and planning</button><button class="chip" type="button" data-filter="ecotourism" aria-pressed="false">Ecotourism and conservation</button><button class="chip" type="button" data-filter="heritage" aria-pressed="false">Heritage and culture</button><button class="chip" type="button" data-filter="destination" aria-pressed="false">Destinations and infrastructure</button><button class="chip" type="button" data-filter="community" aria-pressed="false">Community and rural</button><button class="chip" type="button" data-filter="research" aria-pressed="false">Research and standards</button><button class="chip" type="button" data-filter="leadership" aria-pressed="false">Leadership</button>
+    </div>
+    <p class="filter-count" aria-live="polite" data-filter-count></p>
+    <ol class="exp" id="assign-list" data-filter-list>
+  <li class="exp__row" data-cat="policy destination">
+    <p class="exp__period">Jan to Jul 2026</p>
     <div>
-      <h3 class="exp__role">Tourism Development Strategy for Bagmati Province</h3>
-      <p class="exp__org">Strategy report</p>
+      <h3 class="exp__role">Feasibility Study, Integrated Tourism Development Programme, Bhaktapur Constituency No. 1 (Ka)</h3>
+      <p class="exp__org">Tourism Specialist. Bagmati Province, Ministry of Culture and Tourism</p>
     </div>
     <ul class="exp__tags">
-      <li>15-year horizon</li>
+      <li>Assessed tourism potential and built an integrated framework with a flagship destination</li><li>Sustainable destination management for the constituency</li>
     </ul>
   </li>
-  <li class="exp__row">
-    <p class="exp__period"><!-- DEMO -->2022</p>
+  <li class="exp__row" data-cat="policy">
+    <p class="exp__period">Jan to Sep 2025</p>
     <div>
-      <h3 class="exp__role">Feasibility Study, Integrated Tourism Programme, Bhaktapur</h3>
-      <p class="exp__org">Study report</p>
+      <h3 class="exp__role">15-Year Tourism Development Strategy for Bagmati Province</h3>
+      <p class="exp__org">Tourism Specialist. Bagmati Province, Ministry of Culture and Tourism</p>
     </div>
     <ul class="exp__tags">
-      <li>Flagship destination framework</li>
+      <li>Roadmap for infrastructure, people, marketing and regulation</li><li>Sustainable and inclusive tourism growth</li>
     </ul>
   </li>
-  <li class="exp__row">
-    <p class="exp__period"><!-- DEMO -->2008</p>
+  <li class="exp__row" data-cat="policy destination community">
+    <p class="exp__period">Aug 2023 to Dec 2024</p>
     <div>
-      <h3 class="exp__role">Nepal Tourism Development Master Plan</h3>
-      <p class="exp__org">Master plan</p>
+      <h3 class="exp__role">Municipal Tourism Master Plan, Jeetpursimara Sub-Metropolitan City</h3>
+      <p class="exp__org">Tourism Specialist. Jeetpursimara Sub-Metropolitan City, with Gaumukhi Engineering Services</p>
     </div>
     <ul class="exp__tags">
-      <li>Ecotourism in Nepal: Future Direction</li>
+      <li>Natural, adventure, religious, cultural and entertainment tourism</li><li>Jobs through public-private partnerships</li>
     </ul>
   </li>
-  <li class="exp__row">
-    <p class="exp__period"><!-- DEMO -->2002</p>
+  <li class="exp__row" data-cat="destination research">
+    <p class="exp__period">Feb 2023 to Dec 2024</p>
     <div>
-      <h3 class="exp__role">Positioning Paper, Tourism for Sustainable Development</h3>
-      <p class="exp__org">Workshop paper</p>
+      <h3 class="exp__role">Feasibility Study of Adventure Tourism in Bagmati Province</h3>
+      <p class="exp__org">Team Leader, Adventure Tourism Specialist. Bagmati Province, with Gaumukhi Engineering Services</p>
     </div>
     <ul class="exp__tags">
-      <li>Reviewed at the 31 May 2002 workshop</li>
+      <li>Infrastructure gaps, product improvement and SWOT</li><li>Project implementation plan</li>
     </ul>
   </li>
-</ol>
+  <li class="exp__row" data-cat="destination">
+    <p class="exp__period">Feb 2023 to Dec 2024</p>
+    <div>
+      <h3 class="exp__role">Feasibility Study of a Training Center for Mountaineers</h3>
+      <p class="exp__org">Tourism Training Specialist. Bagmati Province, with Gaumukhi Engineering Services</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Establishing and developing a mountaineer training center</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="research ecotourism">
+    <p class="exp__period">Mar 2022</p>
+    <div>
+      <h3 class="exp__role">Contribution of Forest-Based Tourism to the National Economy</h3>
+      <p class="exp__org">Tourism Expert. Green Era Pvt. Ltd., Forest Research and Training Center</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Literature review, stakeholder roles and methodology</li><li>Obstacles to forest-based tourism</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="destination ecotourism">
+    <p class="exp__period">Feb 2021</p>
+    <div>
+      <h3 class="exp__role">Detailed Project Report, Gonjala Pass (Rasuwa to Sindhupalchowk)</h3>
+      <p class="exp__org">Team Leader. Gaumukhi Engineering Services</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Trail, camping sites and basic amenities</li><li>Infrastructure gaps, SWOT and implementation plan</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="destination ecotourism">
+    <p class="exp__period">Dec 2020 to Dec 2021</p>
+    <div>
+      <h3 class="exp__role">Recreational Lake Upstream of Lami Raha Khola, Saina Maina Municipality</h3>
+      <p class="exp__org">Sustainable Tourism Development Specialist. ITECO Nepal, Sitara Consult, Engineerko Ghar</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Risk and vulnerability assessment</li><li>Impact of urbanization and tourism on watershed and landscape</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="research policy">
+    <p class="exp__period">Nov 2019 to Jan 2020</p>
+    <div>
+      <h3 class="exp__role">Visit Nepal 2020: Scanning Foreign Investment Opportunities</h3>
+      <p class="exp__org">Consultant, team member. MOSES Pvt. Ltd.</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Review of tourism investment policies</li><li>Domestic and foreign direct investment, government incentives</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="ecotourism">
+    <p class="exp__period">Jan 2013 to Jul 2014</p>
+    <div>
+      <h3 class="exp__role">Strengthening the Capacity of DNPWC for Mountain Protected Areas</h3>
+      <p class="exp__org">Team member, Ecotourism Specialist. D.M.I. Pvt. Ltd., for World Bank and Nepal Trust for Nature Conservation</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Capacity-building action plan for effective management</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="destination policy">
+    <p class="exp__period">Jul to Dec 2012</p>
+    <div>
+      <h3 class="exp__role">Lumbini Area Tourism Infrastructure Development Master Plan</h3>
+      <p class="exp__org">Team Leader, Tourism Infrastructure Development Specialist. SASCON Consultancy, for the Ministry of Culture, Tourism and Civil Aviation</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Nawalparasi, Rupandehi and Kapilvastu districts</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="leadership">
+    <p class="exp__period">Dec 2012</p>
+    <div>
+      <h3 class="exp__role">Board of Director, Kathmandu Upatyaka Khanepani Limited (KUKL)</h3>
+      <p class="exp__org">Board Member. KUKL, Kathmandu</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Policy formulation, non-revenue water, monitoring and evaluation</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="destination policy">
+    <p class="exp__period">Jun to Nov 2012</p>
+    <div>
+      <h3 class="exp__role">Chisapani Tourism Area Infrastructure Development Management Plan</h3>
+      <p class="exp__org">Team Leader, Tourism Infrastructure Development Specialist. SASCON Consultancy, for the Ministry of Culture, Tourism and Civil Aviation</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Dang, Banke, Bardia, Surkhet, Kailali and Kanchanpur</li><li>Tourism structure plan and coordination with public and private sectors</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="policy leadership">
+    <p class="exp__period">Jan 2008 to Aug 2009</p>
+    <div>
+      <h3 class="exp__role">Nepal Tourism Year 2011</h3>
+      <p class="exp__org">Senior Advisor and Coordinator. Nepal Tourism Board</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Coordination with all tourism stakeholders</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="policy">
+    <p class="exp__period">Sep to Dec 2008</p>
+    <div>
+      <h3 class="exp__role">Nepal Tourism Policy 2065 and Tourism Vision 2020</h3>
+      <p class="exp__org">Coordinator NTY 2011, Senior Advisor to NTB, Technical Advisor. Ministry of Tourism and Civil Aviation</p>
+    </div>
+    <ul class="exp__tags">
+      <li>National tourism capacity-building programmes</li><li>Vision 2020 for sustainable tourism development</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="ecotourism policy">
+    <p class="exp__period">Sep to Nov 2008</p>
+    <div>
+      <h3 class="exp__role">Tourism Management Plan, Gorkha District</h3>
+      <p class="exp__org">Team Leader and Ecotourism Expert. Nepal Tourism Board</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Integrated plan linking conservation and socio-economic benefits</li><li>Links to Dhaulagiri, Annapurna, Manaslu and Ganesh Himal</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="ecotourism">
+    <p class="exp__period">Mar to May 2008</p>
+    <div>
+      <h3 class="exp__role">Ecotourism Plan for Butwal, Tansen and Dovan VDC</h3>
+      <p class="exp__org">Team Leader and Ecotourism Expert. Nepal Tourism Board</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Integrated tourism management plan</li><li>Policy strengths and gaps</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="ecotourism">
+    <p class="exp__period">Jun to Dec 2007</p>
+    <div>
+      <h3 class="exp__role">Ecotourism Management Plan, Western Terai (Bardia, Kailali, Kanchanpur)</h3>
+      <p class="exp__org">Team Leader and Ecotourism Specialist. Western Terai Landscape Complex Project, led by METCON</p>
+    </div>
+    <ul class="exp__tags">
+      <li>With MoFSC, UNDP, WWF, SNV, DNPWC and GEF partners</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="destination">
+    <p class="exp__period">Feb to May 2007</p>
+    <div>
+      <h3 class="exp__role">Greater Itahari Tourism Management Plan</h3>
+      <p class="exp__org">Recreation Tourism Expert. Department of Physical Planning and Infrastructure Development</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Recreation and tourism management plan</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="research community">
+    <p class="exp__period">Aug to Dec 2006</p>
+    <div>
+      <h3 class="exp__role">Interventions in the Bamboo Sub-Sector</h3>
+      <p class="exp__org">Economist. PSP/RUFIN, a GTZ programme</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Raising income and employment</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="research community">
+    <p class="exp__period">Dec 2005 to Jul 2006</p>
+    <div>
+      <h3 class="exp__role">Target Markets and Market Linkage of the New Tourism Areas</h3>
+      <p class="exp__org">Team Leader, Product Development Specialist. Tourism for Rural Poverty Alleviation Project (TRPAP/UNDP)</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Market linkage for the new tourism areas, including Lumbini</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="policy">
+    <p class="exp__period">Dec 2005 to Oct 2006</p>
+    <div>
+      <h3 class="exp__role">Nepal Tourism Development Master Plan 2008</h3>
+      <p class="exp__org">Deputy Team Leader and Tourism Planner. Ministry of Culture, Tourism and Civil Aviation and Nepal Tourism Board</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Product development, marketing and promotion</li><li>Tourism Satellite Account orientation and forecasting</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="heritage">
+    <p class="exp__period">Oct to Nov 2005</p>
+    <div>
+      <h3 class="exp__role">Conservation and Renovation of Hanuman Dhoka Durbar Square</h3>
+      <p class="exp__org">Culture and Heritage Tourism Specialist. Kathmandu Metropolitan City</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Technical report to mobilize donor support for the World Heritage Site</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="heritage">
+    <p class="exp__period">May to Jun 2005</p>
+    <div>
+      <h3 class="exp__role">Heritage Conservation and Tourism Promotion</h3>
+      <p class="exp__org">Culture and Heritage Tourism Specialist. Kathmandu Metropolitan City</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Conservation, planning and promotion within the city</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="leadership">
+    <p class="exp__period">Aug 2004 to Feb 2005</p>
+    <div>
+      <h3 class="exp__role">Second World Buddhist Summit 2004, Lumbini</h3>
+      <p class="exp__org">Member-Secretary of the Steering Committee, Executive Director. Lumbini Development Trust and the Ministry of Culture, Tourism and Civil Aviation</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Planning and execution of the summit (30 Nov to 2 Dec 2004)</li><li>Financial administration, coordination, monitoring and evaluation</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="policy research">
+    <p class="exp__period">Apr to Jul 2004</p>
+    <div>
+      <h3 class="exp__role">Medium-Term Expenditure Framework (MTEF)</h3>
+      <p class="exp__org">Analyst and consultant. National Planning Commission</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Medium-term expenditure framework preparation</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="ecotourism">
+    <p class="exp__period">Apr to Jul 2004</p>
+    <div>
+      <h3 class="exp__role">Conservation Management Plan: Shivapuri, Shey-Phoksundo and Rara National Parks</h3>
+      <p class="exp__org">Tourism Specialist. King Mahendra Trust for Nature Conservation</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Tourism within conservation management</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="policy">
+    <p class="exp__period">Feb 2003 to Mar 2004</p>
+    <div>
+      <h3 class="exp__role">Tourism Policy Review 2004</h3>
+      <p class="exp__org">Tourism Policy Analyst. Nepal Chamber of Commerce</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Review of Nepal's tourism policy and recommendations</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="ecotourism">
+    <p class="exp__period">Dec 2003 to Jan 2004</p>
+    <div>
+      <h3 class="exp__role">Ecotourism Management Plan, Barandabhar Forest Corridor</h3>
+      <p class="exp__org">Ecotourism Specialist. King Mahendra Trust for Nature Conservation</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Tiger-Rhino Conservation Programme, Chitwan</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="community destination">
+    <p class="exp__period">Sep 2003 to Jul 2004</p>
+    <div>
+      <h3 class="exp__role">Tourism Products for the Lumbini Area</h3>
+      <p class="exp__org">Tourism Specialist. Tourism for Rural Poverty Alleviation / UNDP</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Tourism products and a complete tourist map-brochure for Lumbini</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="ecotourism research">
+    <p class="exp__period">Aug to Dec 2003</p>
+    <div>
+      <h3 class="exp__role">Financial Sustainability and Exit Strategy, Tiger-Rhino Conservation Project</h3>
+      <p class="exp__org">Economist. King Mahendra Trust for Nature Conservation</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Financial sustainability, replication and exit strategy</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="ecotourism community">
+    <p class="exp__period">Jul to Aug 2003</p>
+    <div>
+      <h3 class="exp__role">Community Supported Ecotourism Management Plan, Eastern Chitwan</h3>
+      <p class="exp__org">Ecotourism Specialist. King Mahendra Trust for Nature Conservation</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Plan for community forests supported by KMTNC</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="heritage">
+    <p class="exp__period">May 2002 to Jul 2003</p>
+    <div>
+      <h3 class="exp__role">Bhadrakali Conservation Programme</h3>
+      <p class="exp__org">Coordinator, Heritage Conservation and Tourism Specialist. Nepal Heritage Society</p>
+    </div>
+    <ul class="exp__tags">
+      <li>With Kathmandu Metropolitan City, Guthi Sansthan and the Department of Archaeology</li><li>Tourism as a value-added product</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="heritage">
+    <p class="exp__period">Nov 2002 to Apr 2003</p>
+    <div>
+      <h3 class="exp__role">Heritage Walks in the Kathmandu City Core</h3>
+      <p class="exp__org">Culture and Heritage Tourism Specialist. Kathmandu Metropolitan City, Heritage and Tourism Department</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Public awareness and conservation support</li><li>Longer visitor stays and local economic benefit</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="policy">
+    <p class="exp__period">Apr to Jun 2002</p>
+    <div>
+      <h3 class="exp__role">Tourism for Sustainable Development in Nepal</h3>
+      <p class="exp__org">National Consultant, Tourism Research Specialist. UNDP/Nepal and UN-WTO</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Sustainable tourism master plan with long-term plan and short-term action programme</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="heritage destination">
+    <p class="exp__period">Jul to Dec 2001</p>
+    <div>
+      <h3 class="exp__role">Tourism Development and Promotion Plan for Kathmandu Metropolitan City</h3>
+      <p class="exp__org">Tourism Planner, Product Development Specialist. Kathmandu Valley Mapping Program (KVMP)</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Hanuman Dhoka heritage conservation programme</li><li>New sites to increase visitor stay</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="ecotourism policy">
+    <p class="exp__period">Sep 2000 to May 2001</p>
+    <div>
+      <h3 class="exp__role">Ecotourism Project in Nepal (TA 3332 NEP)</h3>
+      <p class="exp__org">Deputy Team Leader, Ecotourism Specialist. METCON, WS Atkins (UK) and Asian Development Bank</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Master plan for Taplejung, Dolpa, Tansen and Lumbini</li><li>Ecotourism marketing, visitor projections, airport planning</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="research">
+    <p class="exp__period">Dec 1999 to May 2000</p>
+    <div>
+      <h3 class="exp__role">National Tourism Demand Survey among Trekking Agencies</h3>
+      <p class="exp__org">Team Leader, Tourism Specialist. Nepal Tourism Board and SNV Nepal</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Trekking products, market segments, routes and motivations</li><li>Feasibility of a multiple-use visitor center</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="research policy">
+    <p class="exp__period">May to Sep 1998</p>
+    <div>
+      <h3 class="exp__role">Visit Nepal Year 1998</h3>
+      <p class="exp__org">Tourism Technical Consultant and Specialist. Ministry of Tourism and Civil Aviation, VNY 1998 Secretariat</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Air-seat capacity at Tribhuvan International Airport</li><li>The Festival Calendar for VNY 1998</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="heritage community">
+    <p class="exp__period">Mar to Jul 1998</p>
+    <div>
+      <h3 class="exp__role">Restoration of Cultural Heritage: Bhagabati Bahal Temple</h3>
+      <p class="exp__org">Tourism Specialist. PATA Nepal Chapter</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Community-based restoration of the temple in Thamel</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="research">
+    <p class="exp__period">May to Aug 1997</p>
+    <div>
+      <h3 class="exp__role">Tourism Sector Development Project (TA 2685-NEP)</h3>
+      <p class="exp__org">Tourism Standard Development Specialist. Asian Development Bank, TATA Consultancy and METCON</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Classification of the tourism industry to international standards</li><li>Monitoring methods, codes of ethics, human-resource recommendations</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="ecotourism">
+    <p class="exp__period">Mar to Oct 1997</p>
+    <div>
+      <h3 class="exp__role">Tourism Development Plan (1998 to 2002), Royal Bardia National Park and Buffer Zone</h3>
+      <p class="exp__org">Team Leader and Ecotourism Specialist. WWF Nepal Program</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Tourism plan for the park and its buffer zone</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="policy">
+    <p class="exp__period">Oct 1996 to Jan 1998</p>
+    <div>
+      <h3 class="exp__role">Ninth Five-Year Plan (1997 to 2002), Tourism Sector</h3>
+      <p class="exp__org">Tourism Task Force Member and Tourism Specialist. National Planning Commission</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Review of the Eighth Plan, market trends, forecasts and policy</li><li>A 20-year perspective vision</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="community">
+    <p class="exp__period">Oct 1996 to Feb 1997</p>
+    <div>
+      <h3 class="exp__role">Techno-Economic Study: Community Village Resort at Bhadravas and Lamatar</h3>
+      <p class="exp__org">Tourism Specialist. Tara Gaun Development Board</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Model of a community-based village resort</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="ecotourism research">
+    <p class="exp__period">Feb 1995 to Apr 1996</p>
+    <div>
+      <h3 class="exp__role">Baseline Survey: Changu Hill, Dhunche and Thulo Shyabru</h3>
+      <p class="exp__org">Team Leader, Tourism Specialist. UNDP, Partnership for Quality Tourism</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Baseline for ecotourism feasibility and planning</li>
+    </ul>
+  </li>
+  <li class="exp__row" data-cat="research">
+    <p class="exp__period">Feb 1995 to Apr 1996</p>
+    <div>
+      <h3 class="exp__role">Tourism Internet Highway System</h3>
+      <p class="exp__org">Tourism Specialist. Department of Tourism</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Establishing an internet highway system for tourism</li>
+    </ul>
+  </li>
+    </ol>
   </div>
 </section>
 
-<!-- WP: template-part: cta-band -->
-<section class="cta on-dark" aria-labelledby="cta-title">
-  <div class="cta__bg" aria-hidden="true">
-    <picture><source type="image/webp" srcset="assets/images/terrace-group-480.webp 480w, assets/images/terrace-group-960.webp 960w, assets/images/terrace-group-1600.webp 1600w" sizes="100vw"><img src="assets/images/terrace-group-960.jpg" width="1600" height="1200" alt="" loading="lazy" decoding="async"></picture>
-  </div>
-  <div class="container">
-    <div class="cta__panel glass glass--dark" data-reveal>
-      <h2 id="cta-title">Tell me about your project</h2>
-      <p>Send a short note on what you are planning. I reply by email.</p>
-      <a class="btn btn--cream" href="contact.html">Send an inquiry <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<section class="section" id="industry" aria-labelledby="industry-title">
+  <div class="container container--narrow">
+    <div class="section-head" data-reveal>
+      <h2 id="industry-title">In the tourism industry</h2>
+      <p class="section-head__lead">Before and alongside consulting, I worked inside travel and aviation companies.</p>
     </div>
+    <ol class="exp" data-reveal-group>
+  <li class="exp__row">
+    <p class="exp__period">Feb 2010 to Feb 2011</p>
+    <div>
+      <h3 class="exp__role">Executive Manager, Administration</h3>
+      <p class="exp__org">Fishtail Air Pvt. Ltd., Kathmandu</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Overall responsibility for administration, personnel and accounting</li>
+    </ul>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Jul 2000 to Aug 2001</p>
+    <div>
+      <h3 class="exp__role">Director, Tours and Administration</h3>
+      <p class="exp__org">Everest Travel Service Pvt. Ltd.</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Planning, packaging, marketing, sales, tour handling and trekking operations</li>
+    </ul>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Aug 1999 to Mar 2000</p>
+    <div>
+      <h3 class="exp__role">Business Manager, Director Tours and Administration</h3>
+      <p class="exp__org">Mountain Dreams Pvt. Ltd., a Nepal-Germany joint venture</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Planning, packaging, marketing, sales and trekking operations</li>
+    </ul>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Jan 1998 to Dec 1999</p>
+    <div>
+      <h3 class="exp__role">Director, Tours and Administration</h3>
+      <p class="exp__org">Potala Travels, Nepal</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Planning, packaging, marketing, sales and trekking operations</li>
+    </ul>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Jan 1994 to Oct 1996</p>
+    <div>
+      <h3 class="exp__role">Joint Assistant Manager, Tour</h3>
+      <p class="exp__org">Yeti Travels (Pvt.) Ltd.</p>
+    </div>
+    <ul class="exp__tags">
+      <li>MICE tourism, incentive tours and special-interest packages</li>
+    </ul>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Aug 1987 to Dec 1988</p>
+    <div>
+      <h3 class="exp__role">Tour Officer and City Tourist Guide</h3>
+      <p class="exp__org">United World Travel (Pvt.) Ltd.</p>
+    </div>
+    <ul class="exp__tags">
+      <li>Guiding and services for international visitors, in French and Italian</li>
+    </ul>
+  </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="papers" aria-labelledby="papers-title">
+  <div class="container container--narrow">
+    <div class="section-head" data-reveal>
+      <h2 id="papers-title">Papers and workshops presented</h2>
+      <p class="section-head__lead">27 papers presented and workshops organized, 1996 to 2026.</p>
+    </div>
+    <ol class="exp">
+  <li class="exp__row">
+    <p class="exp__period">Jul 2026</p>
+    <div>
+      <h3 class="exp__role">Feasibility Study of the Integrated Tourism Development Program, Bhaktapur PA Constituency No. 1 (Ka)</h3>
+      <p class="exp__org">Government of Bagmati Province, Ministry of Culture and Tourism, Hetauda</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Jul 2025</p>
+    <div>
+      <h3 class="exp__role">Strategic Tourism Development Plan for Bagmati Province (2025 to 2040)</h3>
+      <p class="exp__org">Government of Bagmati Province, Ministry of Culture and Tourism, Hetauda</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Oct 2019</p>
+    <div>
+      <h3 class="exp__role">Scientific Tourism for Prosperous Nepal and Happy Nepal</h3>
+      <p class="exp__org">International Youth Conference on Science, Technology and Innovation, NAST, Kathmandu</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Aug 2019</p>
+    <div>
+      <h3 class="exp__role">Tourism for Prosperous Nepal and Happy Nepali</h3>
+      <p class="exp__org">MoCTCA, organized by Nepal Ph.D. Association</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Jun 2008</p>
+    <div>
+      <h3 class="exp__role">Multi Stakeholders' Roundtable Conference and Workshop on Sustainable Tourism Development in Bhaktapur District</h3>
+      <p class="exp__org">Bhaktapur Tourism Development Council</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Jun 2008</p>
+    <div>
+      <h3 class="exp__role">Prospect of Village Tourism in Bhaktapur</h3>
+      <p class="exp__org">Bhaktapur Tourism Development Council</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Jun 2008</p>
+    <div>
+      <h3 class="exp__role">Backward and Forward Market Linkage of Tourism</h3>
+      <p class="exp__org">Bhaktapur Tourism Development Council</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Jun 2008</p>
+    <div>
+      <h3 class="exp__role">Implementing Strategies for Sustainable Tourism Development in Bhaktapur District</h3>
+      <p class="exp__org">Bhaktapur Tourism Development Council</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Jun 2008</p>
+    <div>
+      <h3 class="exp__role">Roles and Responsibilities of the Key Stakeholders in Sustainable Tourism Development</h3>
+      <p class="exp__org">Bhaktapur Tourism Development Council</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Mar 2007</p>
+    <div>
+      <h3 class="exp__role">Sammunnat Paryatana (Prosperous Sustainable Tourism) for Sambridda Nepal</h3>
+      <p class="exp__org">Loktantrik Paryatan Samaj, Thamel, Kathmandu</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Feb 2007</p>
+    <div>
+      <h3 class="exp__role">Structural Appraisal for Prosperous Sustainable Tourism</h3>
+      <p class="exp__org">Loktantrik Paryatan Samaj, Thamel Tourism Development Council</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Sep 2006</p>
+    <div>
+      <h3 class="exp__role">Lumbini: A Diamond Mine for Tourism Industry (seminar on pilgrimage tourism)</h3>
+      <p class="exp__org">Village Tourism Forum Nepal</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Dec 2002</p>
+    <div>
+      <h3 class="exp__role">Tourism Package Development: Focusing Rural Areas of Nepal</h3>
+      <p class="exp__org">Tourism for Rural Poverty Alleviation Program and NATHM</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Nov to Dec 2002</p>
+    <div>
+      <h3 class="exp__role">Public Hearing series: Heritage Walks in the Kantipur City</h3>
+      <p class="exp__org">Kathmandu Metropolitan City</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Jul 2002</p>
+    <div>
+      <h3 class="exp__role">A Structural Linkage and Dependency of Tourism Development in Nepal</h3>
+      <p class="exp__org">Village Tourism Forum</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Jul 2002</p>
+    <div>
+      <h3 class="exp__role">Role of Teacher and Students on Conservation Awareness of Cultural Heritage</h3>
+      <p class="exp__org">Kathmandu Metropolitan City</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Jun 2002</p>
+    <div>
+      <h3 class="exp__role">Tourism for Sustainable Development</h3>
+      <p class="exp__org">Sustainable Tourism Network, Nepal Tourism Board</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">May 2002</p>
+    <div>
+      <h3 class="exp__role">Stakeholders Consultation Workshop on a long-term plan for Sustainable Development of Nepal's Tourism Sector</h3>
+      <p class="exp__org">MoCTCA, UNDP-WTO mission NEP/02/005</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">May 2002</p>
+    <div>
+      <h3 class="exp__role">Tourism for Sustainable Development: Tourism Planning Workshop</h3>
+      <p class="exp__org">MoCTCA, UNDP-WTO mission NEP/02/005</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Mar 2002</p>
+    <div>
+      <h3 class="exp__role">Heritage Walks, a concept of Culture Heritage Conservation and Promotion of Tourism</h3>
+      <p class="exp__org">Nepal Heritage Society</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Oct 2001</p>
+    <div>
+      <h3 class="exp__role">Heritage Walks a Product Development Scheme of Tourism</h3>
+      <p class="exp__org">Kathmandu Valley Mapping Program</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Mar 2001</p>
+    <div>
+      <h3 class="exp__role">Ecotourism in Nepal: The Way Forward</h3>
+      <p class="exp__org">Nepal Tourism Board and ADB Ecotourism Project Team, TA 3332 NEP</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Dec 2000</p>
+    <div>
+      <h3 class="exp__role">Ecotourism in Nepal: Future Direction</h3>
+      <p class="exp__org">Nepal Tourism Board and ADB Ecotourism Project Team, TA 3332 NEP</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Nov 1997</p>
+    <div>
+      <h3 class="exp__role">The Ninth Five Year Plan (1997 to 2002): Tourism Stakeholder Consultation Workshop</h3>
+      <p class="exp__org">National Planning Commission</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Jun 1997</p>
+    <div>
+      <h3 class="exp__role">Tourism Industry Standardization</h3>
+      <p class="exp__org">ADB Tourism Sector Development Team, TA 2685-NEP</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Dec 1996</p>
+    <div>
+      <h3 class="exp__role">Nepal Tourism Board and Department of Tourism, as an alternative division</h3>
+      <p class="exp__org">UNDP, Partnership for Quality Tourism</p>
+    </div>
+  </li>
+  <li class="exp__row">
+    <p class="exp__period">Oct 1996</p>
+    <div>
+      <h3 class="exp__role">The Role of Private Sector in Promoting Tourism</h3>
+      <p class="exp__org">VNY'98 and Image Nepal, Kathmandu</p>
+    </div>
+  </li>
+    </ol>
   </div>
 </section>
 
@@ -239,32 +936,40 @@
 
 <!-- WP: footer.php -->
 <footer class="site-footer">
+  <div class="site-footer__stage">
+      <div class="container site-footer__top">
+        <div class="site-footer__lead">
+          <div class="site-footer__cols">
+            <div>
+              <p class="site-footer__title">Pages</p>
+              <ul class="site-footer__list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="writing.html">Writing</a></li>
+                <li><a href="gallery.html">Frames</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="site-footer__title">Contact</p>
+              <!-- WP: dynamic (contact details) -->
+              <ul class="site-footer__list">
+                <li><a href="mailto:hello@example.com"><!-- DEMO -->hello@example.com</a></li>
+                <li><a href="tel:+97715550142"><!-- DEMO -->+977 1 555 0142</a></li>
+                <li><!-- DEMO -->Kathmandu, Nepal</li>
+              </ul>
+            </div>
+          </div>
+          <div class="site-footer__brand">
+            <p class="site-footer__name">Dr. Gyanendra<br>Tuladhar</p>
+            <p class="u-mt-5">Tourism economist. Ph.D., Tourism Economical Science.</p>
+          </div>
+        </div>
+      </div>
+  </div>
   <div class="container">
-    <div class="site-footer__grid">
-      <div>
-        <p class="site-footer__name">Gyanendra<br>Tuladhar</p>
-        <p class="u-mt-5">Tourism economist. Ph.D., Tourism Economical Science.</p>
-      </div>
-      <div>
-        <p class="site-footer__title">Pages</p>
-        <ul class="site-footer__list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="work.html">Work</a></li>
-          <li><a href="writing.html">Writing</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="site-footer__title">Contact</p>
-        <!-- WP: dynamic (contact details) -->
-        <ul class="site-footer__list">
-          <li><a href="mailto:hello@example.com"><!-- DEMO -->hello@example.com</a></li>
-          <li><a href="tel:+97715550142"><!-- DEMO -->+977 1 555 0142</a></li>
-          <li><!-- DEMO -->Kathmandu, Nepal</li>
-        </ul>
-      </div>
-    </div>
     <p class="site-footer__legal">&copy; 2026 Dr. Gyanendra Ratna Tuladhar. All rights reserved.</p>
   </div>
 </footer>
@@ -273,5 +978,6 @@
 <script src="assets/js/nav.js" defer></script>
 <script src="assets/js/reveal.js" defer></script>
 <script src="assets/js/motion.js" defer></script>
+<script src="assets/js/filter.js" defer></script>
 </body>
 </html>
